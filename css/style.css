@@ -1,0 +1,67 @@
+body
+{
+    background-color: #000000;
+    color: #FFFFFF;
+    overflow: hidden;
+    font-family: Arial, Garamond, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    
+}
+.logo > img
+{
+    width: 20%;
+    margin: 50px;
+}
+#logo{
+    animation: move_left 2s infinite;
+}
+
+#title
+{
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    animation: changeColor 5s infinite, loading 3s 1;
+}
+.container
+{
+    font-size: 100%;
+    text-align: center;
+    margin:0;
+    animation: loading 6s 1;
+    /* animation-delay: 5s; */
+}
+.links
+{
+    font-size: 200%;
+    text-align: center;
+    margin:0;
+}
+h2:hover{
+    color: #FF0000;
+    animation: changeColor 5s infinite;}
+a:visited{
+    color: #ffffff;}
+a:hover{
+    cursor: pointer;
+    animation: changeColor 5s infinite;}   
+    
+@keyframes changeColor
+{
+
+    0% {color: #d314c9;}
+    25% {color: #FF0000;}
+    50% {color: #00FF00;}
+    75% {color: #0000FF;}
+    100% {color: #d3d617;}
+}
+
+@keyframes loading
+{
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
